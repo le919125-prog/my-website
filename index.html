@@ -1,133 +1,279 @@
+<div class="banner">
+  <img src="1.png" alt="Hey Babe Banner">
+</div>
 <!DOCTYPE html>
 <html lang="vi">
-<style>
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f9f9f9;
-  color: #111;
-}
-
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 40px 20px;
-}
-
-.hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
-}
-
-.hero img {
-  width: 100%;
-  border-radius: 16px;
-}
-
-h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
-}
-
-.price {
-  font-size: 28px;
-  font-weight: bold;
-  margin: 20px 0;
-}
-
-.btn {
-  display: inline-block;
-  padding: 14px 28px;
-  background: #000;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: 600;
-}
-
-.section {
-  margin-top: 80px;
-}
-
-.section h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.certificate img {
-  max-width: 600px;
-  width: 100%;
-  border-radius: 12px;
-}
-</style>
 <head>
-    <meta charset="UTF-8">
-    <title>HEY BABE! Cosmetics</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hey Babe! Body Makeup</title>
 
-    <!-- LINK CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f7fbf9;
+      color: #1f2937;
+    }
+
+    /* ===== BANNER ===== */
+    .banner img {
+      width: 100%;
+      max-height: 520px;
+      object-fit: cover;
+      display: block;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 40px;
+      color: #2f6f60;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #4b6b63;
+      font-size: 18px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .product {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 24px;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
+
+    .info h2 {
+      font-size: 34px;
+      color: #2f6f60;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 32px;
+      font-weight: bold;
+      color: #0f766e;
+      margin: 20px 0;
+    }
+
+    .info ul {
+      padding-left: 20px;
+      margin-bottom: 25px;
+    }
+
+    .info li {
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #0f766e;
+      color: #fff;
+      padding: 16px 32px;
+      border-radius: 40px;
+      font-size: 18px;
+      text-decoration: none;
+      box-shadow: 0 10px 25px rgba(15,118,110,0.3);
+    }
+
+    .section {
+      margin-top: 70px;
+      background: #fff;
+      padding: 50px 30px;
+      border-radius: 32px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+    }
+
+    .section h3 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #2f6f60;
+    }
+
+    .section ul, .section p {
+      max-width: 850px;
+      margin: auto;
+      line-height: 1.8;
+    }
+
+    footer {
+      margin-top: 80px;
+      background: #e6f5ee;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #355f55;
+    }
+
+    @media (max-width: 900px) {
+      .product {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-content">
-        <img src="assets/images/hero.jpg" alt="Hey Babe Cosmetics" class="hero-image">
+<header>
+  <h1>Hey Babe!</h1>
+  <p>Body Makeup – Làn da đẹp tức thì, tự nhiên & sang</p>
+</header>
 
-        <h1>HEY BABE!</h1>
-        <p class="tagline">
-            Giải pháp trang điểm body cao cấp – mịn màng, đều màu tức thì
-        </p>
+<div class="container">
+  <!-- ===== SẢN PHẨM ===== -->
+  <div class="product">
+    <img src="2.jpg" alt="Hey Babe Body Makeup">
 
-        <div class="price">299.000₫</div>
+    <div class="info">
+      <h2>Hey Babe! Body Makeup 500g</h2>
 
-        <a href="#order" class="btn-primary">Đặt hàng ngay</a>
+      <p>
+        Body makeup giúp làm đều màu da, che phủ khuyết điểm nhẹ nhàng,
+        mang lại hiệu ứng da mịn đẹp tự nhiên chỉ sau vài phút.
+      </p>
+
+      <div class="price">300.000₫</div>
+
+      <ul>
+        <li>✨ Tần suất: <b>1–2 lần/ngày</b></li>
+        <li>✨ Kết cấu mỏng nhẹ – dễ tán</li>
+        <li>✨ Không bết dính – không nặng da</li>
+        <li>✨ Dùng cho toàn thân</li>
+      </ul>
+
+      <a class="btn" href="tel:0977558903">📞 Đặt hàng ngay</a>
     </div>
-</section>
+  </div>
 
-<!-- TRUST BAR -->
-<section class="trust-bar">
-    <div>✔ Đã công bố Bộ Y Tế</div>
-    <div>✔ Sản phẩm chính hãng</div>
-    <div>✔ Thanh toán COD</div>
-</section>
-
-<!-- PRODUCT -->
-<section class="product-focus">
-    <h2>HEY BABE! Body Makeup</h2>
+  <!-- ===== HƯỚNG DẪN ===== -->
+  <div class="section">
+    <h3>Hướng dẫn & mẹo sử dụng</h3>
     <p>
-        Che phủ khuyết điểm body, nâng tông tự nhiên, tạo hiệu ứng da mịn như filter
-        mà không cần makeup cầu kỳ.
+      Sử dụng <b>1–2 lần/ngày</b>.<br>
+      👉 Nên <b>tẩy tế bào chết body 1–2 lần/tuần</b>
+      để lớp kem tán đều và đẹp hơn.
     </p>
-</section>
+  </div>
 
-<!-- CERTIFICATE -->
-<section class="certificate">
-    <h2>Giấy công bố Bộ Y Tế</h2>
-
-    <p>
-        Sản phẩm đã được cấp <b>Phiếu công bố mỹ phẩm</b>
-        theo đúng quy định của Bộ Y Tế Việt Nam.
-    </p>
-
+  <!-- ===== LƯU Ý ===== -->
+  <div class="section">
+    <h3>⚠️ Lưu ý khi sử dụng (Rất quan trọng)</h3>
     <ul>
-        <li>Số tiếp nhận: <b>005322/25/CBMP-HCM</b></li>
-        <li>Cơ quan cấp: <b>Sở Y Tế TP.HCM</b></li>
-        <li>Hiệu lực: <b>05 năm</b></li>
+      <li>Chỉ dùng cho cơ thể – không dùng cho mặt</li>
+      <li>Không dùng trên vùng da trầy xước hoặc tổn thương</li>
+      <li>Ngưng dùng nếu có dấu hiệu kích ứng</li>
+      <li>Tránh tiếp xúc với mắt</li>
+      <li>Để xa tầm tay trẻ em</li>
     </ul>
+  </div>
 
-    <img src="assets/images/certificate.jpg" alt="Giấy công bố Bộ Y Tế">
-</section>
+  <!-- ===== DÍNH QUẦN ÁO ===== -->
+  <div class="section">
+    <h3>❗ Lưu ý về dính quần áo</h3>
+    <ul>
+      <li>Nếu thoa quá dày, kem có thể dính vào vải</li>
+      <li>Chỉ nên thoa lớp mỏng vừa đủ</li>
+      <li>
+        Nếu lỡ bôi quá nhiều → xối nhẹ nước lên da rồi lau khô.
+        Lớp kem dư trôi bớt nhưng vẫn giữ hiệu ứng che phủ tự nhiên
+      </li>
+    </ul>
+  </div>
 
-<!-- CTA -->
-<section class="cta" id="order">
-    <h2>Sẵn sàng sở hữu làn da hoàn hảo?</h2>
-    <p>Chỉ 299.000₫ – Giao hàng tận nơi, thanh toán khi nhận</p>
-    <a href="tel:0977558903" class="btn-primary">Đặt hàng ngay</a>
-</section>
+  <!-- ===== AI NÊN SỬ DỤNG ===== -->
+  <div class="section">
+  <h3>Ai nên sử dụng Hey Babe! Body Makeup?</h3>
+  <ul>
+    <li>Người có làn da body không đều màu</li>
+    <li>Da có vết thâm nhẹ, sạm, khuyết điểm nhỏ</li>
+    <li>Cần da body đẹp nhanh khi đi tiệc, sự kiện</li>
+    <li>Người không thích makeup body dày, bí da</li>
+  </ul>
+</div>
+
+  <!-- ===== MẶT SAU ===== -->
+  <div class="section">
+    <h3>Thông tin chi tiết trên bao bì</h3>
+    <img src="3.jpg" alt="Mặt sau sản phẩm" style="width:100%;border-radius:24px;margin-top:30px;">
+  </div>
+
+  <!-- ===== PHÁP LÝ ===== -->
+  <div class="section">
+    <h3>📦 Thông tin sản xuất</h3>
+    <p>
+      <b>Đơn vị chịu trách nhiệm:</b> Hộ kinh doanh Mộc Thảo<br>
+      <b>Địa chỉ:</b> 9B/7 đường 3, P. Tăng Nhơn Phú, TP.HCM
+      <br><br>
+      <b>Sản xuất tại:</b> Công ty TNHH Mỹ phẩm 2T – Bình Dương<br>
+      <b>HSD:</b> 24 tháng từ NSX • <b>Sau mở nắp:</b> 6 tháng (6M)<br>
+      <b>Bảo quản:</b> 20–25°C, tránh ánh nắng trực tiếp
+    </p>
+  </div>
+
+<!-- ===== PHIẾU CÔNG BỐ ===== -->
+<div class="section">
+  <h3>📄 Phiếu công bố sản phẩm mỹ phẩm</h3>
+
+  <p style="text-align:center; max-width:800px;">
+    Sản phẩm đã được tiếp nhận Phiếu công bố theo quy định của
+    cơ quan quản lý nhà nước về mỹ phẩm.
+  </p>
+
+  <img 
+    src="4.jpg" 
+    alt="Phiếu công bố sản phẩm mỹ phẩm Hey Babe"
+    style="
+      width:100%;
+      max-width:900px;
+      display:block;
+      margin:30px auto 0;
+      border-radius:16px;
+      box-shadow:0 15px 40px rgba(0,0,0,0.15);
+    "
+  >
+</div>
+  <!-- ===== CAM KẾT ===== -->
+  <div class="section">
+    <h3>🏆 Cam kết chất lượng</h3>
+    <ul>
+      <li>Cân bằng giữa makeup & dưỡng da</li>
+      <li>Thành phần chọn lọc đạt chuẩn mỹ phẩm</li>
+      <li>Mỏng nhẹ – dễ tán – không bết dính</li>
+      <li>Hiệu ứng da đẹp tự nhiên, sang</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  <p>HỘ KINH DOANH MỘC THẢO</p>
+  <p>Hey Babe • 9B/7 Đường 3, P. Tăng Nhơn Phú, TP.HCM</p>
+  <p>Hotline: 0977 558 903 • COD & Chuyển khoản</p> 
+</footer>
 
 </body>
 </html>
