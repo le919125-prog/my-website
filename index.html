@@ -133,6 +133,24 @@
         grid-template-columns: 1fr;
       }
     }
+    /* ===== BEFORE AFTER SLIDER ===== */
+.slider {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.slider-track img {
+  width: 100%;
+  flex-shrink: 0;
+}
   </style>
 </head>
 
@@ -215,6 +233,26 @@
   </ul>
 </div>
 
+<!-- === HIỆU QUẢ TRƯỚC VÀ SAU KHI SỬ DỤNG === -->
+<div class="section">
+  <h3>Hiệu quả trước & sau khi sử dụng</h3>
+
+  <p style="text-align:center;max-width:800px;">
+    Làn da body sau khi sử dụng Hey Babe! trở nên đều màu,
+    mịn màng và tươi tắn hơn rõ rệt chỉ sau vài phút.
+  </p>
+
+  <div class="slider">
+    <div class="slider-track" id="sliderTrack">
+      <img src="5.jpg">
+      <img src="6.jpg">
+      <img src="7.jpg">
+      <img src="8.jpg">
+      <img src="9.jpg">
+    </div>
+  </div>
+</div>
+
   <!-- ===== MẶT SAU ===== -->
   <div class="section">
     <h3>Thông tin chi tiết trên bao bì</h3>
@@ -275,5 +313,16 @@
   <p>Hotline: 0977 558 903 • COD & Chuyển khoản</p> 
 </footer>
 
+<script>
+  const track = document.getElementById("sliderTrack");
+  const slides = track.children;
+  let index = 0;
+
+  setInterval(() => {
+    index++;
+    if (index >= slides.length) index = 0;
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }, 3000);
+</script>
 </body>
 </html>
